@@ -8,7 +8,7 @@ class Auto extends Vehiculo{
     {
         $this->cantidadPuertas = $cantP;
         //se llama el constructor de la clase padre
-        parent::__construct($motor=null,$cantR=null,$mar=null);
+        parent::__construct($motorEncendido,$cantRuedas,$marca);
     }
 
     public function setCantidadPuertas()
