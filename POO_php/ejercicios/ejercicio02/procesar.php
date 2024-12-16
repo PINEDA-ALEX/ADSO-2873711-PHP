@@ -3,14 +3,15 @@ include 'Cuenta.php';
 
 session_start();
 
-// Crear una cuenta inicial si no existe en la sesión
+
+
 if (!isset($_SESSION['cuenta'])) {
     $_SESSION['cuenta'] = new Cuenta("123456", "jhon", 5000000, "Ahorro");
 }
 
 $cuenta = $_SESSION['cuenta'];
 
-// Capturar datos del formulario
+
 $accion = $_POST['accion'] ?? null;
 $nombre = $_POST['nombre'] ?? null;
 $monto = $_POST['monto'] ?? 0;
@@ -44,7 +45,7 @@ if ($nombre !== "jhon") {
     }
 }
 
-// Mostrar resultado
+
 echo "<h2>Resultado</h2>";
 echo "<p>$resultado</p>";
 echo "<a href='index.php'>Regresar</a>";

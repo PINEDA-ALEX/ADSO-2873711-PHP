@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: auto;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+
+}
+.color_defaul{
+    background-color: antiquewhite;
+}
+.color-greean{
+    background-color: rgb(102, 164, 102);
+}
